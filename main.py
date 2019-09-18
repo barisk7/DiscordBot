@@ -10,7 +10,7 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
 
 
-startup_ext = ['Music']
+startup_ext = ['musicUtil']
 
 bot = commands.Bot('.')
 
@@ -31,7 +31,7 @@ if __name__ == '__main__':
         try:
             bot.load_extension(ext)
         except Exception as e:
-            print('failed to load ext')
+            print('failed to load ext  ', e)
 
 
 bot.run(TOKEN)

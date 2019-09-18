@@ -61,7 +61,7 @@ class VoiceState:
             await self.bot.send_message(self.current.channel, 'Now playing' + str(self.current))
             self.current.player.start()
             await self.play_next_song.wait()
-class Music:
+class Music(commands.Cog):
     """Voice related commands.
     Works in multiple servers at once.
     """
@@ -92,7 +92,7 @@ class Music:
                 pass
 
     @commands.command(pass_context=True, no_pm=True)
-    async def join(self, ctx, *, channel : discord.Channel):
+    async def join(self, ctx, *, channel : discord.channel):
         """Joins a voice channel."""
         try:
             await self.create_voice_client(channel)

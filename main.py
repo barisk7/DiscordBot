@@ -24,7 +24,7 @@ class main_commands():
 
 @bot.command(pass_context=True)
 async def sa(ctx):
-    await bot.say("as")
+    await ctx.send("as")
 
 if __name__ == '__main__':
     for ext in startup_ext:

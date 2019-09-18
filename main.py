@@ -1,10 +1,11 @@
 import os
-import discord
 
+import discord
 from dotenv import load_dotenv
 
 load_dotenv()
-token = os.getenv('NjIzOTYyNDkyMjEyNjA5MDQ0.XYKOhg.MhiMX8ky5BtF4KkTazz-GrjZn9c')
+token = os.getenv('DISCORD_TOKEN')
+
 client = discord.Client()
 
 @client.event

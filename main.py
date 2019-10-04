@@ -2,6 +2,7 @@ import os
 import discord
 from discord.ext import commands
 from dotenv import load_dotenv
+print('Barisbaba')
 
 from discord.voice_client import VoiceClient
 
